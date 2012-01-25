@@ -1,0 +1,8 @@
+fieldset {border:1px solid #ccc; margin:0 2px; padding:.35em .625em .75em}
+legend {color:#000; *margin-left:-7px}
+input,button,textarea,select {margin:0; font:12px tahoma,simsun}
+button::-moz-focus-inner,input::-moz-focus-inner {border:0; padding:0}
+input[type=button],input[type=submit],input[type=reset],button,label {cursor:pointer}
+input[type=checkbox],input[type=radio] {padding:0; vertical-align:text-bottom; *vertical-align:middle}
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){input[type=checkbox],input[type=radio]{vertical-align:0}}
+textarea {resize:vertical; overflow-y:auto; vertical-align:top}
