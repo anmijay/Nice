@@ -1,0 +1,160 @@
+/*
+* Nice.css v1.0
+* Copyright (c) 2012, www.niceue.com
+* Licensed under the MIT license.
+*/
+
+/* 
+ * 以下元素的margin值在不同浏览器不统一
+ */
+body,form,ul,ol,h1,h2,h3,h4,h5,h6 {margin:0}
+
+
+/*
+ * 移除<table>的cellspacing
+ */
+table {border-collapse:collapse; border-spacing:0;}
+
+
+/*
+ * 和td一样左对齐
+ */
+caption,th {text-align:left;}
+
+
+/*
+ * 确保ul和ol按正常功能显示
+ */
+ul,ol {padding:0 0 1em 40px;}
+li ul,li ol{padding-bottom:0}
+
+/*
+ * 统一前距离
+ */
+dd,blockquote {margin:0 0 0 40px;}
+
+
+/*
+ * 统一段落间距
+ */
+p {margin:0 0 1.25em;}
+
+
+/*
+ * 在IE6/7/8/9, FF3, 链接img时图片会出现边框
+ * 在IE7，图片缩放会变得失真
+ */
+img {
+	border:0; 
+	-ms-interpolation-mode:bicubic;
+}
+
+
+/*
+ * 提高<pre>标记内文本的可读性
+ */
+pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
+
+
+/*
+ * 去除默认斜体
+ */
+address,cite,dfn,em,var{font-style:normal;}
+
+
+/*
+ * 统一所有浏览器字体
+ */
+code,kbd,pre,samp {font-family:'courier new',courier,monospace;}
+
+
+/*
+ * 统一引用标记
+ */
+q:before,q:after{content:''}
+
+
+/*
+ * 防止上标和下标影响行高(gist.github.com/413930)
+ */
+sub,sup {font-size:75%; line-height:0; position:relative; vertical-align:baseline}
+sup {top:-0.5em}
+sub {bottom:-0.25em}
+
+
+/* ================== Form =================*/
+/*
+ * 统一默认样式，而不是单纯去除
+ */
+fieldset {border:1px solid #ccc; margin:0 2px; padding:.35em .625em .75em}
+legend {color:#000; *margin-left:-7px;}
+
+
+/*
+ * 去除IE6/7, FF3+, S5, Chrome默认的margin
+ * IE6/7不能继承字体样式
+ */
+input,button,textarea,select {
+	margin:0;
+	font:12px/1.5 tahoma,simsun;
+}
+
+
+/*
+ * 移除FF3+内边框和内补丁
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {border:0; padding:0}
+
+
+/*
+ * 提升按钮及标签的可访问性 (由于IE6不支持属性选择器，所以在IE6下button,label的设定也作废，可以把label分离出来使IE6也生效)
+ */
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+label {cursor:pointer;}
+
+
+/*
+ * FF,S5,Chrome只能纵向拉伸高度, 移除IE下默认的滚动条, 统一与文本顶对齐
+ */
+textarea {resize:vertical; overflow-y:auto; vertical-align:top}
+
+
+/* ================== HTML5 ==================== */
+/*
+ * 参考normalize.css
+ */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+audio,canvas,video{display:inline-block; *display:inline; *zoom:1}
+audio:not([controls]),[hidden]{display:none;}
+svg:not(:root){overflow:hidden;}
+figure{margin:0}
+mark{background:#ff0;color:#000}
+
+/*
+ * 以下样式为统一全局字体风格，请自行继续添加
+ */
+/* Globals */
+html {
+	font-size:62.5%;				/* 10px = 1em = 100% = 8pt */
+	-webkit-text-size-adjust:none;	/* 使webkit内核默认可以启用小字体 */
+}
+body {
+	height:100%;					/* 避免body高度影响背景图 */
+	font:12px/1.5 tahoma,simsun;	/* 全局默认字体 */
+	font-size:1.2rem;				/* IE9+ & !IE */
+	color:#282828					/* IE中默认字体颜色是#282828，比纯黑和谐 */
+}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+h1 {font-size:2em}
+h2 {font-size:1.8em}
+h3 {font-size:1.6em}
+h4 {font-size:1.4em}
+h5 {font-size:1.2em}
+h6 {font-size:1em}
