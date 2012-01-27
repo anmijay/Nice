@@ -1,0 +1,48 @@
+/*
+* Global.css
+* Copyright (c) 2012, www.niceue.com
+* Licensed under the MIT license.
+*/
+.cf:after {display:block;content:'\20';height:0;clear:both;}
+.cf {zoom:1;}
+.auto {margin-left:auto; margin-right:auto;}
+.fl {float:left;}
+.fr {float:right;}
+.abs {position:absolute;}
+.rel {position:relative;}
+.oh {overflow:hidden;}
+.vh {visibility:hidden;}
+.vv {visibility:visible;}
+.hide {display:none;}
+.block {display:block;}
+.inline {display:inline;}
+.inblock {display:inline-block; *display:inline; *zoom:1;}
+.cell {display:table-cell; *display:inline-block; width:2000px; *width:auto;}
+.nowrap {white-space:nowrap; work-break:keep-all;}
+
+/* Alignment class */
+.tal {text-align:left;}
+.tac {text-align:center;}
+.tar {text-align:right;}
+.vat {vertical-align:top;}
+.vam {vertical-align:middle;}
+.vab {vertical-align:bottom;}
+.vatb{vertical-align:text-bottom;}
+
+/* Color class */
+.red,.red a {color:#f00}
+.green,.green a {color:#090}
+.yellow,.yellow a {color:#f90}
+.blue,.blue a {color:#06f}
+.white,.white a {color:#fff}
+.gray,.gray a {color:#999}
+.black,.black a {color:#000}
+
+/* Font class */
+.fw4 {font-weight:400;}
+.fw7 {font-weight:700;}
+.fs0 {font-size:0;}
+.fs12 {font-size:12px;}
+.fs14 {font-size:14px;}
+.fs16 {font-size:16px;}
+.fs20 {font-size:20px;}
