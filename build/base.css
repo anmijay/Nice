@@ -24,7 +24,7 @@ sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}su
 
 /*Recommended Styles*/
 html {font-size:62.5%; -webkit-text-size-adjust:none}
-body {height:100%; font:12px/1.5 tahoma,simsun; font-size:1.2rem; color:#282828}
+body {height:100%; font:12px/1.5 tahoma,arial,simsun,sans-serif; font-size:1.2rem; color:#282828}
 
 a {text-decoration:none;}
 a:hover {text-decoration:underline;}

@@ -1,5 +1,5 @@
 /*
-* Nice.css
+* Nice.css v0.1
 * Copyright (c) 2012, www.niceue.com
 * Licensed under the MIT license.
 */
@@ -59,7 +59,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 /*
  * 去除默认斜体
  */
-address,cite,dfn,em,var{font-style:normal;}
+address,cite,dfn,em,var {font-style:normal;}
 
 
 /*
@@ -84,7 +84,7 @@ sub {bottom:-0.25em}
 
 /* ================== Form =================*/
 /*
- * 统一默认样式，而不是单纯去除
+ * 统一默认样式，而不是单纯去除 (参考normalize.css)
  */
 fieldset {border:1px solid #ccc; margin:0 2px; padding:.35em .625em .75em}
 legend {color:#000; *margin-left:-7px;}
@@ -96,7 +96,7 @@ legend {color:#000; *margin-left:-7px;}
  */
 input,button,textarea,select {
 	margin:0;
-	font:12px/1.5 tahoma,simsun;
+	font:12px/1.5 tahoma,arial,simsun,sans-serif;
 }
 
 
@@ -108,7 +108,8 @@ input::-moz-focus-inner {border:0; padding:0}
 
 
 /*
- * 提升按钮及标签的可访问性 (由于IE6不支持属性选择器，所以在IE6下button,label的设定也作废，可以把label分离出来使IE6也生效)
+ * 提升按钮及标签的可访问性 
+ * 由于IE6不支持属性选择器，所以在IE6下button,label的设定也作废，可以把label分离出来使IE6也生效
  */
 input[type=button],
 input[type=submit],
@@ -139,20 +140,20 @@ mark{background:#ff0;color:#000}
  */
 /* Globals */
 html {
-	font-size:62.5%;				/* 10px = 1em = 100% = 8pt */
-	-webkit-text-size-adjust:none;	/* 使webkit内核默认可以启用小字体 */
+	font-size:62.5%;					/* 10px = 1em = 100% = 8pt */
+	-webkit-text-size-adjust:none;		/* 禁用Webkit内核浏览器的文字大小调整功能 */
 }
 body {
-	height:100%;					/* 避免body高度影响背景图 */
-	font:12px/1.5 tahoma,simsun;	/* 全局默认字体 */
-	font-size:1.2rem;				/* IE9+ & !IE */
-	color:#282828					/* IE中默认字体颜色是#282828，比纯黑和谐 */
+	height:100%;									/* 避免body高度太小影响背景 */
+	font:12px/1.5 tahoma,arial,simsun,sans-serif;	/* 全局字体设置(兼容中/英文操作系统，兼容utf-8及gbk编码) */
+	font-size:1.2rem;								/* 相对于html的字体大小，IE9+ & !IE 支持 (注意:为了兼容IE6-8，前面需加上px的字体大小) */
+	color:#282828									/* IE中默认字体颜色是#282828，比纯黑和谐 */
 }
 
-a {text-decoration:none;}
+a {text-decoration:none;}				/* 基本的链接样式 */
 a:hover {text-decoration:underline;}
 
-h1 {font-size:2em}
+h1 {font-size:2em}						/* 基本的标题样式 (提示: 修改字体大小或去掉不必要的定义) */
 h2 {font-size:1.8em}
 h3 {font-size:1.6em}
 h4 {font-size:1.4em}

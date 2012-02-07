@@ -1,5 +1,5 @@
 /*
-* Nice.css
+* Nice.css v0.1
 * Copyright (c) 2012, www.niceue.com
 * Licensed under the MIT license.
 */
@@ -20,7 +20,7 @@ sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}su
 /* Form */
 fieldset {border:1px solid #ccc; margin:0 2px; padding:.35em .625em .75em}
 legend {color:#000; *margin-left:-7px}
-input,button,textarea,select {margin:0; font:12px tahoma,simsun; vertical-align:middle;}
+input,button,textarea,select {margin:0; font:12px tahoma,arial,simsun,sans-serif; vertical-align:middle;}
 button::-moz-focus-inner,input::-moz-focus-inner {border:0; padding:0}
 input[type=button],input[type=submit],input[type=reset],button,label {cursor:pointer}
 textarea {resize:vertical; overflow-y:auto; vertical-align:top}
@@ -34,7 +34,7 @@ mark{background:#ff0;color:#000}
 
 /* Globals */
 html {font-size:62.5%; -webkit-text-size-adjust:none}
-body {height:100%; font:12px/1.5 tahoma,simsun; font-size:1.2rem; color:#282828}
+body {height:100%; font:12px/1.5 tahoma,arial,simsun,sans-serif; font-size:1.2rem; color:#282828}
 
 a {text-decoration:none;}
 a:hover {text-decoration:underline;}

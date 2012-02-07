@@ -17,7 +17,6 @@
 .block {display:block;}
 .inline {display:inline;}
 .inblock {display:inline-block; *display:inline; *zoom:1;}
-.cell {display:table-cell; *display:inline-block; width:2000px; *width:auto;}
 .nowrap {white-space:nowrap; work-break:keep-all;}
 
 /* Alignment class */
