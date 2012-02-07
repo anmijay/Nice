@@ -34,12 +34,14 @@ textarea:focus {
 	border-color: #54A1CB;
 	color: #000;
 	outline:0 none;
-	-webkit-box-shadow: 0 0 5px rgba(84,161,203,.5);
-	-moz-box-shadow: 0 0 5px rgba(84,161,203,.5);
-	box-shadow:  0 0 5px rgba(84,161,203,.5);
+	-webkit-box-shadow: 0 0 3px rgba(84,161,203,.5);
+	-moz-box-shadow: 0 0 3px rgba(84,161,203,.5);
+	box-shadow:  0 0 3px rgba(84,161,203,.5);
 	-webkit-transition:box-shadow .3s linear 0s;
-	-moz-transition:border-color .2s linear .1s;
-	transition:border-color .2s linear .1s;
+	-moz-transition:box-shadow .3s linear 0s;
+	-ms-transition:box-shadow .3s linear 0s;
+	-o-transition:box-shadow .3s linear 0s;
+	transition:box-shadow .3s linear 0s;
 }
 
 input[disabled],
