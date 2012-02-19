@@ -111,9 +111,9 @@ input::-moz-focus-inner {border:0; padding:0}
  * 提升按钮及标签的可访问性 
  * 由于IE6不支持属性选择器，所以在IE6下button,label的设定也作废，可以把label分离出来使IE6也生效
  */
-input[type=button],
-input[type=submit],
-input[type=reset],
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
 button,
 label {cursor:pointer;}
 
