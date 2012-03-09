@@ -23,9 +23,13 @@ Nice会一直围绕3个点开发：
 ## 三、文件及开发说明：
 
 reset.css     [精简与高效的重置方案，`推荐尽可能使用normal.css`]
-`normal.css`  [与reset不同，注重的是各浏览器表现、W3C标准、用户体验以及减小开发难度]
+
+normal.css    [与reset不同，注重的是各浏览器表现、W3C标准、用户体验以及减小开发难度]
+
 global.css    [预定义的一些简洁的全局通用class, 按需摘取]
+
 form.css      [表单的一些基础样式]
+
 html5.css     [基于html5的样式修复]
 
 
@@ -34,6 +38,6 @@ html5.css     [基于html5的样式修复]
 任何批评、问题和意见等，都欢迎联系：[zj86@foxmail.com](mailto:zj86@foxmail.com)
 
 
-## 四、版权和许可
+## 五、版权和许可
 
 基于 [MIT License](http://en.wikipedia.org/wiki/MIT_License "WikiPedia 中关于 MIT License 的描述") 开源。版权属于 `niceUE` 所有，作者 [Jony](http://www.niceue.com) 具有作品署名权。

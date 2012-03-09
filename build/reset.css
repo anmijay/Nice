@@ -6,4 +6,4 @@ body,input,select,button,textarea {font:12px/1.5 tahoma,arial}
 ul,ol {list-style:none}
 img,iframe,fieldset {border:0}
 table {border-collapse:collapse}
-:link,:visited {text-decoration:none}
+a {text-decoration:none}
