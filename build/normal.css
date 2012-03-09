@@ -1,0 +1,31 @@
+/*
+(CC) 2012, Jony (www.niceue.com), MIT Licensed
+*/
+@charset "utf-8";
+@import "html5.css";
+html {font-size:62.5%; -webkit-text-size-adjust:none}
+body {height:100%; font:12px/1.5 tahoma,arial,simsun,sans-serif; font-size:1.2rem; color:#282828}
+body,h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,dd,form,fieldset,legend,caption {margin:0;padding:0}
+ul,ol {padding-left:40px}
+dd {margin-left:40px}
+p,dl {margin:1em 0;}
+blockquote {margin:1em 40px}
+table {border-collapse:collapse}
+caption,th {text-align:left}
+fieldset,iframe,img {border:0}
+img {max-width:100%; -ms-interpolation-mode:bicubic}
+pre {white-space:pre; word-wrap:break-word}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp {font-family:'courier new',courier,monospace}
+q:before,q:after{content:''}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}
+input,button,textarea,select,label {margin:0; font-size:100%; vertical-align:middle}
+select {height:22px; line-height:18px; padding:2px 0}
+textarea {overflow:auto; vertical-align:top; resize:vertical}
+:link,:visited {text-decoration:none}
+h1 {font-size:2em}
+h2 {font-size:1.8em}
+h3 {font-size:1.6em}
+h4 {font-size:1.4em}
+h5 {font-size:1.2em}
+h6 {font-size:1em}
