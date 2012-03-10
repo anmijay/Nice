@@ -1,33 +1,30 @@
+/*
+(CC) 2012, Jony (www.niceue.com), MIT Licensed
+*/
+/* Layout */
+.cf {*zoom:1} .cf:after {display:block;content:'\20';height:0;clear:both}
 .auto {margin-left:auto; margin-right:auto}
-.abs {position:absolute}
-.rel {position:relative}
-.hide {display:none}
-.block {display:block}
-.inline {display:inline}
-.inblock {display:inline-block; *display:inline; *zoom:1}
+.hide {display:none !important}
+.ib {display:inline-block; *display:inline; *zoom:1}
 .fl {float:left}
 .fr {float:right}
 .oh {overflow:hidden}
 .vh {visibility:hidden}
-.vv {visibility:visible}
-.cf {*zoom:1} .cf:after {display:block;content:'\20';height:0;clear:both}
 
-/* Alignment class */
+/* Alignment */
 .tal {text-align:left}
-.tac {text-align:center}
 .tar {text-align:right}
+.tac {text-align:center}
 .vat {vertical-align:top}
 .vam {vertical-align:middle}
 
-/* Font class */
-.fw4 {font-weight:400}
-.fw7 {font-weight:700}
+/* Font */
+.blod {font-weight:700}
 .fs12 {font-size:12px}
 .fs14 {font-size:14px}
 .fs18 {font-size:18px}
-.fs20 {font-size:20px}
 
-/* Color class */
+/* Color */
 .red,.red a {color:#f00}
 .green,.green a {color:#090}
 .yellow,.yellow a {color:#f90}
