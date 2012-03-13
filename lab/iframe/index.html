@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title> Iframe Test</title>
+<style type="text/css">
+body {margin:10px;background:#ccc; font:12px/1.5 tahoma,arial;}
+h2 {font:600 14px/1.5 tahoma,arial; margin-top:20px;}
+pre {font-family:'courier new',monospace}
+table {border-collapse:collapse}
+th,td {border:1px soldi #333; padding:3px 5px;}
+.demo {background:#000; color:#fff;}
+
+#iframe1,#iframe2,#ifrmae3 {width:600px; height:100px;}
+#iframe1 {}
+#iframe2 {vertical-align:bottom; border:0;}
+#iframe3 {display:block; border:0;}
+</style>
+</head>
+<body>
+<h2>原始iframe</h2>
+<div class="demo">
+<iframe src="page.html" id="iframe1">您的浏览器貌似不支持iframe</iframe>
+</div>
+
+<h2>移除非IE浏览器下iframe的边框和底部间距</h2>
+<pre>
+ * 移除底部间距的3中方法：(测试发现vertical-align:middle;在IE6下导致上下错位1像素)
+ * 1. vertical-align:bottom;
+ * 2. vertical-align:top;
+ * 3. display:block;
+</pre>
+<div class="demo">
+<iframe src="page.html" id="iframe2">您的浏览器貌似不支持iframe</iframe>
+</div>
+
+<h2>使iframe在IE下也透明</h2>
+<pre>
+ * 给iframe设置allowTransparency="true"
+</pre>
+<div class="demo">
+<iframe src="blank.html" id="iframe3" allowTransparency="true">您的浏览器貌似不支持iframe</iframe>
+</div>
+</body>
+</html>
