@@ -6,8 +6,8 @@
 .auto {margin-left:auto; margin-right:auto}
 .hide {display:none !important}
 .ib {display:inline-block; *display:inline; *zoom:1}
-.fl {float:left}
-.fr {float:right}
+.fl {float:left;_display:inline}
+.fr {float:right;_display:inline}
 .oh {overflow:hidden}
 .vh {visibility:hidden}
 
@@ -19,7 +19,8 @@
 .vam {vertical-align:middle}
 
 /* Font */
-.blod {font-weight:700}
+.fw40 {font-weight:400}
+.fw70 {font-weight:700}
 .fs12 {font-size:12px}
 .fs14 {font-size:14px}
 .fs18 {font-size:18px}

@@ -21,11 +21,9 @@
 
 /*
  * 1. 10px = 1em = 100% = 8pt
- * 2. 禁用Webkit内核浏览器的文字大小调整功能，使文字可以定义小于12px
  */
 html {
-	font-size:62.5%;				/*1*/
-	-webkit-text-size-adjust:none;	/*2*/
+	font-size:62.5%;    /*1*/
 }
 
 /*
@@ -34,9 +32,9 @@ html {
  * 3. IE中默认字体颜色是#282828，比纯黑和谐好看，这里进行统一
  */
 body {
-	font:12px/1.5 tahoma,arial,simsun,sans-serif;	/*2*/
-	font-size:1.2rem;								/*3*/
-	color:#282828;									/*4*/
+	font:12px/1.5 tahoma,arial,simsun,sans-serif;	/*1*/
+	font-size:1.2rem;								/*2*/
+	color:#282828;									/*3*/
 }
 
 /*
@@ -47,10 +45,36 @@ body {
 body,   /*1*/
 h1,h2,h3,h4,h5,h6,  /*1*/
 p,blockquote,ul,ol,dd,  /*1*/
-form,fieldset,legend,   /*1*/
+form,   /*1*/
 caption /*2*/
 {
     margin:0;padding:0;
+}
+
+/*
+ * 1. 解决在ie6/7 <img>底部出现3px间隙
+ * 2. 解决在ie7图片缩放会变得失真
+ */
+img {
+    border:0;   /*1*/
+    vertical-align:middle;  /*2*/
+    -ms-interpolation-mode:bicubic; /*3*/
+}
+
+/*
+ * 1. 清除iframe默认的2px边框，已知问题: IE6/7/8无法通过样式清除border,必须设置属性“frameborder=0”
+ * 2. HTML5的docype下，IE8/9,Chrome,Safari,Firefox,Opera底部有间隙
+ */
+iframe {
+    border:0;   /*1*/
+    vertical-align:top; /*2*/
+}
+
+/*
+ * 使用合并单元格边框的方式移除单元格间距
+ */
+table {
+    border-collapse:collapse;
 }
 
 /*
@@ -58,6 +82,9 @@ caption /*2*/
  */
 ul,ol,p {
     margin:1em 0;
+}
+li ul,li ol {
+    margin:0;
 }
 
 /*
@@ -72,40 +99,6 @@ ul,ol {
  */
 blockquote {
     margin:1em 40px;
-}
-
-/*
- * 使用合并单元格边框的方式移除单元格间距
- */
-table {
-    border-collapse:collapse;
-}
-
-/*
- * 对齐方式在实际应用中决定
- */
-caption,th {
-    text-align:left;
-}
-
-/*
- * 1. fieldset样式不能统一，全部清零
- * 2. 大部分情况下，不需要iframe的边框
- * 3. img的边框应该由css定义，ie6/7/8/9,ff3 在a元素中的img有边框
- */
-fieldset,   /*1*/
-iframe,     /*2*/
-img {       /*3*/
-    border:0;
-}
-
-/*
- * 1. 解决在ie6/7 <img>底部出现3px间隙
- * 2. 解决在ie7图片缩放会变得失真
- */
-img {
-    vertical-align:middle;  /*1*/
-    -ms-interpolation-mode:bicubic; /*2*/
 }
 
 /*
