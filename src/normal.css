@@ -24,7 +24,7 @@
  * 1. 10px = 1em = 100% = 8pt
  */
 html {
-	font-size:62.5%;    /*1*/
+	font-size:62.5%;  /*1*/
 }
 
 
@@ -34,9 +34,9 @@ html {
  * 3. IE中默认字体颜色是#282828，比纯黑和谐好看，这里进行统一
  */
 body {
-	font:12px/1.5 tahoma,arial,simsun,sans-serif;	/*1*/
-	font-size:1.2rem;								/*2*/
-	color:#282828;									/*3*/
+    font:12px/1.5 tahoma,arial,simsun,sans-serif;  /*1*/
+    font-size:1.2rem;  /*2*/
+    color:#282828;  /*3*/
 }
 
 
@@ -54,7 +54,8 @@ ul,ol,  /*3*/
 form,   /*4*/
 caption /*5*/
 {
-    margin:0;padding:0;
+    margin:0;
+    padding:0;
 }
 
 
@@ -164,8 +165,8 @@ sub{bottom:-0.25em}
  * 3. 在不同浏览器，label与input(特别是checkbox和radio)总是不能对齐，这里统一了各个浏览器的表现
  */
 input,button,textarea,select,label {
-	margin:0;  /*1*/
-	font-size:100%;  /*2*/
+    margin:0;  /*1*/
+    font-size:100%;  /*2*/
     vertical-align:middle;  /*3*/
 }
 
@@ -176,9 +177,9 @@ input,button,textarea,select,label {
  * 3. 默认textarea与文本baseline对齐，导致文本沉在下面比较难看，这里统一与文本顶对齐
  */
 textarea {
-    resize:vertical; /*1*/
-    overflow:auto; /*2*/
-    vertical-align:top; /*3*/
+    resize:vertical;  /*1*/
+    overflow:auto;  /*2*/
+    vertical-align:top;  /*3*/
 }
 
 
