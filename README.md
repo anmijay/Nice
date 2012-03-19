@@ -16,7 +16,7 @@ Nice会一直围绕3点开发：
     
     ---
      |---- build/         构建好的发布文件
-     |---- src/           源码、测试等开发资源
+     |---- src/           源码、测试、实验等开发资源
      |---- readme.md
      |---- license.md
 
@@ -25,7 +25,7 @@ Nice会一直围绕3点开发：
 
     reset.css	[精简与高效的重置方案，`推荐尽可能使用normal.css`]
     normal.css	[与reset不同，注重的是各浏览器表现、W3C标准、用户体验以及减小开发难度]
-    global.css	[预定义的一些简洁的全局通用class, 按需摘取]
+    common.css	[预定义的一些简洁的全局通用class, 按需摘取]
     print.css	[打印的基础样式]
     form.css	[表单的一些基础样式, 按需摘取]
     html5.css	[基于html5的样式修复, 按需摘取]
