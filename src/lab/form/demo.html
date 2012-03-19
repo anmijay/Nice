@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>Nice Form Checker</title>
-<link rel="stylesheet" href="../build/normal.css" type="text/css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.min.js"></script>
+<script src="niceForm.js"></script>
+<link rel="stylesheet" href="../../normal.css" type="text/css">
+<link rel="stylesheet" href="niceForm.css" type="text/css">
 <style type="text/css">
 .set {margin: 1em 0 0;}
 label {display:inline-block;*display:inline;*zoom:1; width:120px; text-align:right;}
@@ -188,14 +191,16 @@ fieldset label {width:80px}
 			<input type="reset" value="reset" /> 
 			<input type="button" value="button type" /> 
 			<button>Button tag</button> 
+			<a href="#" onclick="return false" class="btn">a.button</a> 
 		</div> 
 		<div class="set"> 
 			<input type="submit" value="提交" /> 
 			<input type="reset" value="重置" /> 
 			<input type="button" value="按钮.type" /> 
 			<button>按钮2</button> 
+			<a href="#" onclick="return false" class="btn">a.按钮</a> 
 		</div> 
 	</form> 
-<br><br>
+
 </body>
 </html>

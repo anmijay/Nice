@@ -3,13 +3,11 @@
 */
 /* Layout */
 .cf {*zoom:1} .cf:after {display:block;content:'\20';height:0;clear:both}
-.auto {margin-left:auto; margin-right:auto}
+.inline-block {display:inline-block; *display:inline; *zoom:1}
 .hide {display:none !important}
-.ib {display:inline-block; *display:inline; *zoom:1}
+.invisible {visibility:hidden}
 .fl {float:left;_display:inline}
 .fr {float:right;_display:inline}
-.oh {overflow:hidden}
-.vh {visibility:hidden}
 
 /* Alignment */
 .tal {text-align:left}
@@ -19,8 +17,8 @@
 .vam {vertical-align:middle}
 
 /* Font */
-.fw40 {font-weight:400}
-.fw70 {font-weight:700}
+.fw4 {font-weight:400}
+.fw7 {font-weight:700}
 .fs12 {font-size:12px}
 .fs14 {font-size:14px}
 .fs18 {font-size:18px}
