@@ -28,8 +28,8 @@ legend {
  * 3. 在不同浏览器，label与input(特别是checkbox和radio)总是不能对齐，这里统一了各个浏览器的表现
  */
 input,button,textarea,select,label {
-	margin:0;  /*1*/
-	font-size:100%;  /*2*/
+    margin:0;  /*1*/
+    font-size:100%;  /*2*/
     vertical-align:middle;  /*3*/
 }
 
