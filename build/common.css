@@ -5,6 +5,7 @@
 .cf {*zoom:1} .cf:after {display:block;content:'\20';height:0;clear:both}
 .inline-block {display:inline-block; *display:inline; *zoom:1}
 .hide {display:none !important}
+.hiding {position:absolute !important; clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);}
 .invisible {visibility:hidden}
 .fl {float:left;_display:inline}
 .fr {float:right;_display:inline}
