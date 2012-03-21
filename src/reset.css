@@ -39,7 +39,7 @@ input,select,button,textarea /*2*/
  * 移除列表元素的默认样式
  */
 ul,ol {
-    list-style:none；
+    list-style:none;
 }
 
 
