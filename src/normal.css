@@ -1,13 +1,22 @@
 /*
+ * normal.css
+ * Nice比较推崇的核心样式文件，以统一浏览器基础表现和减小开发难度为目的
  * (CC) 2012, Jony (www.niceue.com), MIT Licensed
  */
-
 /*
  * Nice会一直围绕3点开发:
     1. 统一的基础表现
     2. 更小的开发难度
     3. 更好的用户体验
+
+   Nice参考了一些有名的框架，如normalize、minimum-page、YUI、kissy，
+   好的东西会经过测试后吸收过来，每一个元素都经过了主流浏览器的测试，不会想当然的编写代码
+   当然，Nice也不是完美的，如果大家发现了问题，欢迎指正。
+   可以通过mail（zj86@foxmail.com） 或者到git（https://github.com/niceue/Nice）提交issue
+
+   注释说明中，“IE”指代“Internet Explorer”，“Ch”指代“Google Chrome”，“FF”指代“Firefox”，“Op”指代“Opera”，“Sa”指代Safari
  */
+
 
 @charset "utf-8";
 
@@ -60,8 +69,9 @@ caption /*5*/
 
 
 /*
- * 1. 解决在ie6/7 <img>底部出现3px间隙
- * 2. 解决在ie7图片缩放会变得失真
+ * 1. 防止IE下img被链接时出现边框
+ * 2. 解决在IE6/7 <img>底部出现3px间隙
+ * 3. 解决在IE7图片缩放会变得失真
  */
 img {
     border:0;   /*1*/
@@ -73,8 +83,8 @@ img {
 /*
  * 1. 清除iframe默认的2px边框
  *    已知问题: IE6/7/8无法通过样式清除border,必须设置属性“frameborder=0”
- * 2. 解决在HTML5的docype下(<!doctype html>)，IE8/9,Chrome,Safari,Firefox,Opera底部有间隙
- *    注：vertical-align:bottom也可以, 或者display:block,但w3c的定义以及所有浏览器表现都为inline
+ * 2. 解决在HTML5的docype下(<!doctype html>)，IE8/9,Ch,Sa,FF,Op底部有间隙
+ *    注：vertical-align:bottom也可以, 或者display:block,但w3c的定义以及所有浏览器表现都为inline (参见：test/iframe)
  */
 iframe {
     border:0;   /*1*/
@@ -111,7 +121,7 @@ ul,ol {
 
 
 /*
- * 纠正ie6/7下margin值不一样，并且移除顶部margin
+ * 纠正IE6/7下margin值不一样，并且移除顶部margin
  */
 blockquote {
     margin:0 40px 1em;
@@ -160,7 +170,7 @@ sub{bottom:-0.25em}
 
 
 /*
- * 1. 去除IE6/7, FF3+, S5, Chrome默认的margin
+ * 1. 去除IE6/7, FF3+, Sa5, Ch默认的margin
  * 2. 解决IE6/7不能继承字体样式
  * 3. 在不同浏览器，label与input(特别是checkbox和radio)总是不能对齐，这里统一了各个浏览器的表现
  */
@@ -172,7 +182,7 @@ input,button,textarea,select,label {
 
 
 /*
- * 1. 让FF,S5,Chrome下的textarea只能纵向拉伸高度, 避免因拉伸而影响布局
+ * 1. 让FF,Sa5,Ch下的textarea只能纵向拉伸高度, 避免因拉伸而影响布局
  * 2. 去掉IE下默认的滚动条占位
  * 3. 默认textarea与文本baseline对齐，导致文本沉在下面比较难看，这里统一与文本顶对齐
  */

@@ -59,6 +59,7 @@ textarea {
  * 1. IE6/7 默认22px并且IE6下无法设置select高度, 这里统一为22px
  * 2. Sa 有默认padding:2px 0， 无法设置高度，但是可以设置line-height
  * 3. IE8/9、ff、ch、op 无法设置line-height，但可以设置height和padding，而且padding不影响height
+ *    注：select 参见：test/select，在不同浏览器查看
  * 4. IE9下option有背景色
  */
 select {
